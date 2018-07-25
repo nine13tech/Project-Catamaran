@@ -1,0 +1,28 @@
+
+Project Catamaran is named after the Ares One project to reach the traveller
+    see here: https://www.ishtar-collective.net/categories/ares-one
+
+This API Handler pulls from the Bungie.net Destiny 2 API and returns JSON.
+
+
+Private endpoints are very custom because of how you implement authentication users and tokens.
+All private endpoint calls were commented out but left in.
+A web interface is very much needed in order to prompt for authorization.
+Private endpoints need some cleanup.
+Make sure you check out Python Social Auth as it has a bungie backend contribution from the Destiny Devs Community.
+* https://github.com/python-social-auth
+
+
+Example Usage:
+
+from Project-Catamaran import public.destiny2
+d2 = public.destiny2.Destiny2()
+api_data_as_json = d2.search_destiny_player(1, 'NinerOneThree')
+
+1 = Xbox
+This will return a JSON object as the API response.
+
+All class names follow documentation names only sluggified and lowercase
+See here for API Docs: https://bungie-net.github.io/multi/
+
+Please issue a pull request if you add to this project or modify the classes.
