@@ -1,4 +1,4 @@
-from ..utils import API
+from utils import API
 
 
 class GroupsV2(object):

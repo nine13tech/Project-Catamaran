@@ -4,7 +4,7 @@ class APIConfig(object):
         pass
 
 
-VERSION = "2.0.14.1"
+VERSION = "2.0.14.2"
 # prod, or dev
 CURRENT_ENV = 'prod'
 

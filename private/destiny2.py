@@ -1,5 +1,4 @@
-from ..utils import API
-
+from utils import API
 
 class Destiny2(object):
     """

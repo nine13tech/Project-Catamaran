@@ -12,6 +12,9 @@ Private endpoints need some cleanup.
 Make sure you check out Python Social Auth as it has a bungie backend contribution from the Destiny Devs Community.
 * https://github.com/python-social-auth
 
+Python 3.latest
+Install required python modules from requirements.txt
+
 
 Example Usage:
 
