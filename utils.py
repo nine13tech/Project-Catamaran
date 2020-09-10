@@ -34,7 +34,6 @@ class API(object):
     bungie_api = bungie + '/Platform'
 
     def __init__(self):
-
         api_key = BUNGIE_API_KEY
         origin_header = BUNGIE_ORIGIN
         # print('Warmind_D2.utils.__init__:', origin_header, api_key)

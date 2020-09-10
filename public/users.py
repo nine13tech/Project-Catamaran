@@ -7,29 +7,25 @@ class User(object):
     """
 
     def __init__(self):
-        pass
+        self.public_api = API()
 
     @staticmethod
-    def get_bungie_net_user_by_id(uid: int) -> str:
-        this_api = API()
+    def get_bungie_net_user_by_id(self, uid: int) -> str:
         req = API.bungie_api + '/User/GetBungieNetUserById/' + str(uid) + '/'
-        return this_api.call_bungie_public_api(req)
+        return self.public_api.call_bungie_public_api(req)
 
     @staticmethod
-    def search_users(display_name: str) -> str:
-        this_api = API()
+    def search_users(self, display_name: str) -> str:
         req = API.bungie_api + '/User/SearchUsers/?q=' + display_name
-        return this_api.call_bungie_public_api(req)
+        return self.public_api.call_bungie_public_api(req)
 
     @staticmethod
-    def get_membership_data_by_id(uid: int, membership_type: int = 254) -> str:
-        this_api = API()
+    def get_membership_data_by_id(self, uid: int, membership_type: int = 254) -> str:
         req = API.bungie_api + '/User/GetMembershipsById/' + str(uid) + '/' + str(membership_type) + '/'
-        return this_api.call_bungie_public_api(req)
+        return self.public_api.call_bungie_public_api(req)
 
     @staticmethod
-    def get_partnerships(uid: int) -> str:
+    def get_partnerships(self, uid: int) -> str:
         # print('### PARTNERSHIPS ### \n   >>> ', uid)
-        this_api = API()
         req = API.bungie_api + '/User/' + str(uid) + '/Partnerships/'
-        return this_api.call_bungie_public_api(req)
+        return self.public_api.call_bungie_public_api(req)
