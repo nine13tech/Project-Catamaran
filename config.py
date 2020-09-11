@@ -23,8 +23,8 @@ BASE_DIR = '<path to base dir>'
 # PROD
 BUNGIE_KEY_PROD = "<bungie key id number>"
 BUNGIE_SECRET_PROD = "<bungie secret>"
-BUNGIE_API_KEY_PROD = "<bungie api key>"
-BUNGIE_ORIGIN_PROD = '<your origin key>'
+BUNGIE_API_KEY_PROD = "<replace>"
+BUNGIE_ORIGIN_PROD = '<replace>'
 
 # DEVEL
 BUNGIE_KEY_DEVEL = "<bungie key id number>"
